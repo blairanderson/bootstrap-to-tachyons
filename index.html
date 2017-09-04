@@ -1,0 +1,28 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+
+<!-- <div>
+  <a class="dib mb4 mb0-ns" href="{{site.ios_store_link}}"><img style="height: 60px;" src="img/google-play-badge.svg" alt=""></a>
+  <a class="dib mb4 mb0-ns" href="{{site.android_store_link}}"><img style="height: 60px;" src="img/app-store-badge.svg" alt=""></a>
+</div> -->
+
+<section id="download" class="vh-100 dt bg-moon-gray near-black w-100">
+  <div class="dtc v-mid center measure tc">
+    <h2 class="f1 f-headline-ns">{{site.title}}</h2>
+    <p class="f4 f2-ns">You Might Not Need Bootstrap!</p>
+  </div>
+</section>
+
+<section class="cf w-100 bg-near-white">
+  {% for page in site.pages %}
+    {% if page.title %}
+    <h3 class="tc"><a class="link underline near-black grow" href="{{site.baseurl}}{{ page.url }}">Bootstrap To Tachyons {{ page.title }}</a></h3>
+    {% endif %}
+  {% endfor %}
+</section>
+{% include contact.html %}
+{% include footer.html %}

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="cf">
+  <div class="w-100 w-30-ns fl">
+    <ul>
+      <li><a href="{{site.baseurl}}">Home</a></li>
+    </ul>
+  </div>
+  <div class="w-100 w-70-ns fl">
+    <h1 class="tc">Convert {{page.title}}</h1>
+    <p class="measure center">{{page.content}}</p>
+  </div>
+</div>
+
+<hr>
+
+{% include {{page.url}} %}
+
+<hr>
+
+<iframe width="100%" height="300" src="{{page.bootstrap}}" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
